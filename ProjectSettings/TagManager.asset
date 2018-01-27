@@ -16,9 +16,8 @@ TagManager:
   - MirrorBlue
   - MirrorGreen
   - Wall
-  - EndPointR
-  - EndPointG
-  - EndPointB
+  - Tilemap
+  - Grid
   layers:
   - Default
   - TransparentFX
@@ -53,6 +52,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 576551339
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1761963283
     locked: 0
