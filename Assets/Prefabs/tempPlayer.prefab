@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4879172685285896}
   - component: {fileID: 212291898768459890}
-  - component: {fileID: 114112461062847304}
+  - component: {fileID: 114085624178129174}
+  - component: {fileID: 61219647857449444}
   m_Layer: 0
   m_Name: tempPlayer
   m_TagString: Untagged
@@ -41,7 +42,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114112461062847304
+--- !u!61 &61219647857449444
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938806509038128}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0.039285716, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.1821429}
+    newSize: {x: 3.88, y: 3.89}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.1821429}
+  m_EdgeRadius: 0
+--- !u!114 &114085624178129174
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,10 +75,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1938806509038128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46065f892a693274b82722fe0c9e8223, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dfaf7bc1d60b754fac16d7fc5b3c25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 0}
 --- !u!212 &212291898768459890
 SpriteRenderer:
   m_ObjectHideFlags: 1
