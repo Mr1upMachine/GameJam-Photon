@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Mirror : MonoBehaviour {
 
-    public enum Color { White, Red, Green, Blue };
-    public Color mColor = Color.White;
-
     const int NORTH = 0, WEST = 90, SOUTH = 180, EAST = 270; //Use with laser direction
 
     // Use this for initialization
