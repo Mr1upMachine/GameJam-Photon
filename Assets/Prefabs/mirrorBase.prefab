@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4724726823369674}
   - component: {fileID: 212542015643092930}
   m_Layer: 0
-  m_Name: triAnglePrefab
+  m_Name: mirrorBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

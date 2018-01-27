@@ -9,14 +9,9 @@ public class player : MonoBehaviour {
 	public GameObject laserPrefab;
 	// Use this for initialization
 	void Start () {
-
+        shotSpeed = 5;
 	}
-
-	// Update is called once per frame
-	void Update () {
-
-		shotSpeed = 5;
-	}
+    
 
 	// Update is called once per frame
 	void Update()
