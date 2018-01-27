@@ -85,7 +85,7 @@ public class ColorChange : MonoBehaviour
                 Player.lasers.Add(bullet);
             }
         }
-        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SOUTH)) //if laser is travelling south
+        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SOUTH) || other.gameObject.transform.rotation == Quaternion.Euler(0, 0, -180)) //if laser is travelling south
         {
             if (gameObject.tag == "ConvertRed")
             {
