@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	private List<GameObject> lasers = new List<GameObject>();
+	public static List<GameObject> lasers = new List<GameObject>();
 	private float shotSpeed;
 	public GameObject laserPrefab;
 
