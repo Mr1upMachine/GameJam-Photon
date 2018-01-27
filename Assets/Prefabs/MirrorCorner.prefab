@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212442284028806526}
   - component: {fileID: 114904192696161518}
   - component: {fileID: 60290350052491508}
-  - component: {fileID: 61412550531841708}
-  - component: {fileID: 114736369960180270}
+  - component: {fileID: 61076714302970568}
+  - component: {fileID: 114046194024873126}
   m_Layer: 0
-  m_Name: MirrorCorner
+  m_Name: mirrorBase 1
   m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ PolygonCollider2D:
       - {x: -0.4879518, y: -0.49999997}
       - {x: 0.49999997, y: 0.4879518}
       - {x: 0.49999997, y: 0.49999997}
---- !u!61 &61412550531841708
+--- !u!61 &61076714302970568
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -98,7 +98,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114736369960180270
+--- !u!114 &114046194024873126
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -120,7 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad0198096eff894ea7eeb77609d0f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canRotate: 1
 --- !u!212 &212442284028806526
 SpriteRenderer:
   m_ObjectHideFlags: 1
