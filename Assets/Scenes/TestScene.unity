@@ -191,8 +191,8 @@ GameObject:
   m_PrefabParentObject: {fileID: 1275898905025264, guid: 7585511b29c4fb347a0c51341bd69cd4,
     type: 2}
   m_PrefabInternal: {fileID: 979898480}
---- !u!61 &133742041
-BoxCollider2D:
+--- !u!60 &133742041
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -200,7 +200,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -213,9 +213,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.49, y: 2.49}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.245, y: 1.245}
+      - {x: -1.245, y: -1.245}
+      - {x: -1.2149999, y: -1.245}
+      - {x: 1.245, y: 1.2149999}
+      - {x: 1.245, y: 1.245}
 --- !u!1001 &979898480
 Prefab:
   m_ObjectHideFlags: 0
