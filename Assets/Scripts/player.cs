@@ -29,7 +29,7 @@ public class player : MonoBehaviour {
 		if (counter > 0 )
 		{
 
-			if (counter == 20 || counter == 15 || counter == 10 || counter == 5) {
+			if (counter % 2.0 == 0.0) {
 				GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
 				lasers.Add(bullet);
 			}

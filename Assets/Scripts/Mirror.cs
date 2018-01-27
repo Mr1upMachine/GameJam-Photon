@@ -22,17 +22,18 @@ public class Mirror : MonoBehaviour {
 
     }
 
-    void onTriggerEnter(Collider other)
+	void OnTriggerEnter2D(Collider2D other)
     {
 		if (other.gameObject.CompareTag("LaserWhite") ||
 			other.gameObject.CompareTag("LaserRed") ||
 			other.gameObject.CompareTag("LaserGreen") ||
 			other.gameObject.CompareTag("LaserBlue"))
 		{
+			other.gameObject.transform.rotation = Quaternion.Euler (0, 0, 270);
 
 			if (mRotation == MirrorRot.Rot0)
 			{
-
+				
 			}
 			else if (mRotation == MirrorRot.Rot90)
 			{
