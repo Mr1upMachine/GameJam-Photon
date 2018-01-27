@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class Mirror : MonoBehaviour {
 
-    public enum Color { White, Red, Green, Blue };
-    public enum MirrorRot { Rot0, Rot90, Rot180, Rot270 };
-
-    public MirrorRot mRotation = MirrorRot.Rot0;
-    public Color mColor = Color.White;
-
-    // Use this for initialization
-    void Start () {
+	// Use this for initialization
+	void Start () {
 		
 	}
 	
@@ -19,32 +13,4 @@ public class Mirror : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    private void OnCollisionEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("LaserWhite") ||
-            other.gameObject.CompareTag("LaserRed") ||
-            other.gameObject.CompareTag("LaserGreen") ||
-            other.gameObject.CompareTag("LaserBlue"))
-        {
-
-            if (mRotation == MirrorRot.Rot0)
-            {
-
-            }
-            else if (mRotation == MirrorRot.Rot90)
-            {
-
-            }
-            else if (mRotation == MirrorRot.Rot180)
-            {
-
-            }
-            else if (mRotation == MirrorRot.Rot270)
-            {
-
-            }
-
-        }
-    }
 }
