@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1222938978}
   m_Layer: 0
   m_Name: colorChangerR
-  m_TagString: ConvertRed
+  m_TagString: ConvertGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,11 +475,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.561
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.478
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -487,19 +487,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7056931
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7085177
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_RootOrder
@@ -531,6 +531,10 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0.7954995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.771
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
