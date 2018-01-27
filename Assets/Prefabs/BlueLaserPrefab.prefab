@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50727798437207864}
   - component: {fileID: 114643308047521178}
   m_Layer: 0
-  m_Name: blueLaserPrefab
+  m_Name: BlueLaserPrefab
   m_TagString: LaserBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
