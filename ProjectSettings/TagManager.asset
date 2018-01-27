@@ -16,6 +16,7 @@ TagManager:
   - MirrorBlue
   - MirrorGreen
   - Wall
+  - ShowOnPause
   layers:
   - Default
   - TransparentFX
