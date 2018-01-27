@@ -11,7 +11,7 @@ public class player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        shotSpeed = 5;
+        shotSpeed = 10;
 	}
     
 
