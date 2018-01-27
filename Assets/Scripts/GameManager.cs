@@ -29,7 +29,8 @@ public class GameManager : MonoBehaviour {
 
                 if(ourHitObject.tag == "Mirror")
                 {
-                    //logic for rotation mirrors etc when they are clicked
+                    //logic for rotating mirrors etc when they are clicked
+                    //ourHitObject.SendMessage("Rotate", parameter);  USE THIS FORMAT FOR ROTATING OBJECTS
                 }
             }
         }
