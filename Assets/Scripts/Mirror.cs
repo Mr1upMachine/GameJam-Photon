@@ -5,9 +5,9 @@ using UnityEngine;
 public class Mirror : MonoBehaviour {
 
     public enum Color { White, Red, Green, Blue };
-    public enum MirrorRot { Rot0, Rot90, Rot180, Rot270 };
+    const int MRot0 = 0, MRot90 = 90, MRot180 = 180, MRot270 = 270;
 
-    public MirrorRot mRotation = MirrorRot.Rot0;
+    public int mRotation = 270;
     public Color mColor = Color.White;
 
     // Use this for initialization
@@ -29,26 +29,23 @@ public class Mirror : MonoBehaviour {
 			other.gameObject.CompareTag("LaserGreen") ||
 			other.gameObject.CompareTag("LaserBlue"))
 		{
-			other.gameObject.transform.rotation = Quaternion.Euler (0, 0, 270);
-
+			
+            
             
 
-            if (mRotation == MirrorRot.Rot0)
+            if (mRotation == MRot0)
 			{
-				
-			}
-			else if (mRotation == MirrorRot.Rot90)
+                other.gameObject.transform.rotation = Quaternion.Euler(0, 0, -90);
+            }
+            else if (mRotation == MRot270)
 			{
-
-			}
-			else if (mRotation == MirrorRot.Rot180)
+                other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
+            }
+			else if (mRotation == MRot180 || mRotation == MRot90)
 			{
-
+                Destroy(other.gameObject);
 			}
-			else if (mRotation == MirrorRot.Rot270)
-			{
-
-			}
+			
 
 		}
     }

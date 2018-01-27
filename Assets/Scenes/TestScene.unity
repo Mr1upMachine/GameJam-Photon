@@ -245,15 +245,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_RootOrder
@@ -262,6 +262,15 @@ Prefab:
     - target: {fileID: 1275898905025264, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_TagString
       value: Mirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075142826778726, guid: 7585511b29c4fb347a0c51341bd69cd4,
+        type: 2}
+      propertyPath: mRotation
+      value: 270
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65217379749357118, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
