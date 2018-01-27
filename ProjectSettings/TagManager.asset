@@ -16,6 +16,9 @@ TagManager:
   - MirrorBlue
   - MirrorGreen
   - Wall
+  - EndPointR
+  - EndPointG
+  - EndPointB
   layers:
   - Default
   - TransparentFX

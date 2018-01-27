@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
 	public static List<GameObject> lasers = new List<GameObject>();
 	private float shotSpeed;
 	public GameObject laserPrefab;
+    public Transform spawn;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetKeyDown("space"))
 		{
-			GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
+			GameObject bullet = (GameObject)Instantiate(laserPrefab, spawn.position, spawn.rotation);
 			lasers.Add(bullet);
 		}
 		for(int count = 0; count < lasers.Count; count++ )
