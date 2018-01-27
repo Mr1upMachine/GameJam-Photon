@@ -200,7 +200,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -215,11 +215,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.245, y: 1.245}
-      - {x: -1.245, y: -1.245}
-      - {x: -1.2149999, y: -1.245}
-      - {x: 1.245, y: 1.2149999}
-      - {x: 1.245, y: 1.245}
+    - - {x: -0.49999997, y: 0.49999997}
+      - {x: -0.49999997, y: -0.49999997}
+      - {x: -0.4879518, y: -0.49999997}
+      - {x: 0.49999997, y: 0.4879518}
+      - {x: 0.49999997, y: 0.49999997}
 --- !u!1001 &979898480
 Prefab:
   m_ObjectHideFlags: 0
@@ -229,11 +229,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -0.496
       objectReference: {fileID: 0}
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.505
       objectReference: {fileID: 0}
     - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -272,6 +272,14 @@ Prefab:
       propertyPath: mRotation
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.98385537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853861102561420, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.99762374
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65217379749357118, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7585511b29c4fb347a0c51341bd69cd4, type: 2}
@@ -285,11 +293,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.3499537
+      value: -0.561
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.651349
+      value: -3.478
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -317,11 +325,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.27361888
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.25914747
       objectReference: {fileID: 0}
     - target: {fileID: 4879172685285896, guid: 9752b10bda71cc6489696f210c4d9b9e, type: 2}
       propertyPath: m_LocalScale.z
