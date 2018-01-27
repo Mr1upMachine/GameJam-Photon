@@ -15,6 +15,7 @@ TagManager:
   - MirrorRed
   - MirrorBlue
   - MirrorGreen
+  - Wall
   layers:
   - Default
   - TransparentFX
