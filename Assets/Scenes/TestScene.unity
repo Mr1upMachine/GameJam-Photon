@@ -207,7 +207,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.49, y: 2.49}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 2.49, y: 2.49}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -432,19 +432,6 @@ GameObject:
     type: 2}
   m_PrefabInternal: {fileID: 1300138744}
 --- !u!114 &2016894098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2016894097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46065f892a693274b82722fe0c9e8223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 1883344373255996, guid: 2fb03c4abc3d6644ab16c0223c2ad67f,
-    type: 2}
---- !u!114 &2016894102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
