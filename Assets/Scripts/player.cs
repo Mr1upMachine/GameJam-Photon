@@ -18,7 +18,7 @@ public class player : MonoBehaviour {
 	void Update()
 	{
 
-		if (Input.GetKeyDown("mouse 0"))
+		if (Input.GetKeyDown("space"))
 		{
 			GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
 			lasers.Add(bullet);
