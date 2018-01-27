@@ -133,6 +133,5 @@ public class Mirror : MonoBehaviour {
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-
     }
 }

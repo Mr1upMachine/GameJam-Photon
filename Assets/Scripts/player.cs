@@ -23,7 +23,7 @@ public class player : MonoBehaviour {
 			GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
 			lasers.Add(bullet);
 		}
-		for(int count = 0; count < lasers.Count;count++ )
+		for(int count = 0; count < lasers.Count; count++ )
 		{
 			if (lasers[count] != null)
 			{
