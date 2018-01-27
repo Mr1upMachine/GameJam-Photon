@@ -22,15 +22,20 @@ public class Mirror : MonoBehaviour {
 
     }
 
-    void onTriggerEnter(Collider other)
+    void onTriggerEnter(Collider2D mirrorBase)
     {
-		if (other.gameObject.CompareTag("LaserWhite") ||
-			other.gameObject.CompareTag("LaserRed") ||
-			other.gameObject.CompareTag("LaserGreen") ||
-			other.gameObject.CompareTag("LaserBlue"))
+        Destroy(mirrorBase.gameObject);
+
+
+        if (mirrorBase.gameObject.CompareTag("LaserWhite") ||
+			mirrorBase.gameObject.CompareTag("LaserRed") ||
+			mirrorBase.gameObject.CompareTag("LaserGreen") ||
+			mirrorBase.gameObject.CompareTag("LaserBlue"))
 		{
 
-			if (mRotation == MirrorRot.Rot0)
+            
+
+            if (mRotation == MirrorRot.Rot0)
 			{
 
 			}
