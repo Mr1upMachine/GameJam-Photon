@@ -11,40 +11,42 @@ public class Mirror : MonoBehaviour {
     public Color mColor = Color.White;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    private void OnCollisionEnter(Collider other)
+    void Start()
     {
-        if (other.gameObject.CompareTag("LaserWhite") ||
-            other.gameObject.CompareTag("LaserRed") ||
-            other.gameObject.CompareTag("LaserGreen") ||
-            other.gameObject.CompareTag("LaserBlue"))
-        {
 
-            if (mRotation == MirrorRot.Rot0)
-            {
+    }
 
-            }
-            else if (mRotation == MirrorRot.Rot90)
-            {
+    // Update is called once per frame
+    void Update()
+    {
 
-            }
-            else if (mRotation == MirrorRot.Rot180)
-            {
+    }
 
-            }
-            else if (mRotation == MirrorRot.Rot270)
-            {
+    void onTriggerEnter(Collider other)
+    {
+		if (other.gameObject.CompareTag("LaserWhite") ||
+			other.gameObject.CompareTag("LaserRed") ||
+			other.gameObject.CompareTag("LaserGreen") ||
+			other.gameObject.CompareTag("LaserBlue"))
+		{
 
-            }
+			if (mRotation == MirrorRot.Rot0)
+			{
 
-        }
+			}
+			else if (mRotation == MirrorRot.Rot90)
+			{
+
+			}
+			else if (mRotation == MirrorRot.Rot180)
+			{
+
+			}
+			else if (mRotation == MirrorRot.Rot270)
+			{
+
+			}
+
+		}
     }
 }

@@ -7,6 +7,7 @@ public class player : MonoBehaviour {
 	private List<GameObject> lasers = new List<GameObject>();
 	private float shotSpeed;
 	public GameObject laserPrefab;
+
 	// Use this for initialization
 	void Start () {
         shotSpeed = 5;
