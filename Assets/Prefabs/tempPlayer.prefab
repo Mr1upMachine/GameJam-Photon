@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4879172685285896}
   - component: {fileID: 212291898768459890}
-  - component: {fileID: 114811494943037018}
   m_Layer: 0
   m_Name: tempPlayer
   m_TagString: Untagged
@@ -41,19 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114811494943037018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938806509038128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46065f892a693274b82722fe0c9e8223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 1883344373255996, guid: 2fb03c4abc3d6644ab16c0223c2ad67f,
-    type: 2}
 --- !u!212 &212291898768459890
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -88,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23fc50777870fd24c8ea3b8d2fe3e4d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ba5ec753a7583a4d864e0ad44cacb40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
