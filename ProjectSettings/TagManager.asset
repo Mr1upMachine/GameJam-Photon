@@ -9,6 +9,12 @@ TagManager:
   - LaserRed
   - LaserGreen
   - LaserBlue
+  - ConvertRed
+  - ConvertBlue
+  - ConvertGreen
+  - MirrorRed
+  - MirrorBlue
+  - MirrorGreen
   layers:
   - Default
   - TransparentFX
