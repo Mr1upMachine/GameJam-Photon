@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mirror : MonoBehaviour {
 
-    const int N = 0, N2 = 360, N3 = -360,
+    public const int N = 0, N2 = 360, N3 = -360,
               NW = 45, NW2 = -315,
               W = 90, W2 = -270,  //Use with laser direction
               SW = 135, SW2 = -225,
@@ -35,7 +35,7 @@ public class Mirror : MonoBehaviour {
             }
         }
         else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, W) ||
-                 other.gameObject.transform.rotation == Quaternion.Euler(0, 0, W)) //if laser is travelling west
+                 other.gameObject.transform.rotation == Quaternion.Euler(0, 0, W2)) //if laser is travelling west
         {
             if (transform.rotation == Quaternion.Euler(0, 0, 90))
             {
@@ -92,7 +92,7 @@ public class Mirror : MonoBehaviour {
         }
     }
 
-    private bool IsDiag(Collider2D other)
+    protected bool IsDiag(Collider2D other)
     {
         if ( ((other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NW) || 
                  other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NW2)) && //NW
