@@ -13,4 +13,20 @@ public class WinGame : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (gameObject.tag == "EndPointR")
+        {
+
+        }
+        else if (gameObject.tag == "EndPointG")
+        {
+
+        }
+        else if (gameObject.tag == "EndPointB")
+        {
+
+        }
+    }
 }
