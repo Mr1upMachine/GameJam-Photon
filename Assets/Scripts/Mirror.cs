@@ -82,57 +82,63 @@ public class Mirror : MonoBehaviour {
                 Destroy(other.gameObject);
             }
         }
-        else //approaches flat edge, reverse
-        {
+        else if (IsDiag(other)) //approaches flat edge, reverse
+        { 
             other.gameObject.transform.Rotate(0, 0, 180);
         }
+        else
+        {
+            Destroy(other.gameObject);
+        }
+    }
 
-        /*
-        if (other.gameObject.CompareTag("LaserWhite") ||
-			other.gameObject.CompareTag("LaserRed") ||
-			other.gameObject.CompareTag("LaserGreen") ||
-			other.gameObject.CompareTag("LaserBlue"))
-		{
-			
-            if (gameObject.transform.rotation == Quaternion.Euler(0, 0, 0))
-			{
-                other.gameObject.transform.rotation = Quaternion.Euler(0, 0, -90);
-            }
-            else if (gameObject.transform.rotation == Quaternion.Euler(0, 0, 270))
-			{
-                other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
-            }
-			else
-			{
-                Destroy(other.gameObject);
-			}
-			
+    private bool IsDiag(Collider2D other)
+    {
+        if ( ((other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NW) || 
+                 other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NW2)) && //NW
+                 transform.rotation == Quaternion.Euler(0, 0, 0))
+            ||
+            ((other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SW) ||
+                 other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SW2)) && //SW
+                 transform.rotation == Quaternion.Euler(0, 0, 90))
+            ||
+            ((other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SE) ||
+                 other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SE2)) && //SE
+                 transform.rotation == Quaternion.Euler(0, 0, 180))
+            ||
+            ((other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NE) ||
+                 other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NE2)) && //NE
+                 transform.rotation == Quaternion.Euler(0, 0, 270)) )
+        {
+            return true;
+        }
 
-		}
-
-        */
+        return false;
 
     }
 
-    private void OnMouseDown()
+    private void OnMouseOver()
     {
         if (canRotate)
         {
-            if (transform.rotation == Quaternion.Euler(0, 0, 0))
+            if (Input.GetMouseButtonDown(1))
             {
-                transform.rotation = Quaternion.Euler(0, 0, 270);
-            }
-            else if (transform.rotation == Quaternion.Euler(0, 0, 270))
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 180);
-            }
-            else if (transform.rotation == Quaternion.Euler(0, 0, 180))
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 90);
-            }
-            else if (transform.rotation == Quaternion.Euler(0, 0, 90))
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+                if (transform.rotation == Quaternion.Euler(0, 0, 0))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 270);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 270))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 180);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 180))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 90);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 90))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
             }
         }
     }
