@@ -9,45 +9,75 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1938806509038128}
+  m_RootGameObject: {fileID: 1279441037639506}
   m_IsPrefabParent: 1
---- !u!1 &1938806509038128
+--- !u!1 &1271560167534038
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4879172685285896}
-  - component: {fileID: 212291898768459890}
-  - component: {fileID: 114085624178129174}
-  - component: {fileID: 61219647857449444}
+  - component: {fileID: 4412056044999752}
   m_Layer: 0
-  m_Name: tempPlayer
+  m_Name: laserSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4879172685285896
+--- !u!1 &1279441037639506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4081954198620784}
+  - component: {fileID: 212371722975099372}
+  - component: {fileID: 114022970549706436}
+  - component: {fileID: 61762594155023030}
+  - component: {fileID: 114991128829009182}
+  m_Layer: 0
+  m_Name: PlayerMovable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4081954198620784
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938806509038128}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -3.5, z: 0}
+  m_GameObject: {fileID: 1279441037639506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.43, y: -4.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4412056044999752}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61219647857449444
+--- !u!4 &4412056044999752
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271560167534038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4081954198620784}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61762594155023030
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938806509038128}
+  m_GameObject: {fileID: 1279441037639506}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -67,23 +97,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1821429}
   m_EdgeRadius: 0
---- !u!114 &114085624178129174
+--- !u!114 &114022970549706436
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938806509038128}
+  m_GameObject: {fileID: 1279441037639506}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6dfaf7bc1d60b754fac16d7fc5b3c25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212291898768459890
+--- !u!114 &114991128829009182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1279441037639506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46065f892a693274b82722fe0c9e8223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 1883344373255996, guid: 7fe221e93ff54fb4e90119f2b1d75ad6,
+    type: 2}
+  spawn: {fileID: 4412056044999752}
+--- !u!212 &212371722975099372
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938806509038128}
+  m_GameObject: {fileID: 1279441037639506}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
