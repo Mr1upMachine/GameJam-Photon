@@ -5,7 +5,6 @@ using UnityEngine;
 public class player : MonoBehaviour {
 
 	private List<GameObject> lasers = new List<GameObject>();
-	private int counter = 0;
 	private float shotSpeed;
 	public GameObject laserPrefab;
 
@@ -18,22 +17,11 @@ public class player : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKeyDown("mouse 0"))
 
-		if (Input.GetKeyDown("mouse 0") && counter == 0)
+		if (Input.GetKeyDown("mouse 0"))
 		{
 			GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
 			lasers.Add(bullet);
-			counter = 25;
-		}
-		if (counter > 0 )
-		{
-
-			if (counter % 2.0 == 0.0) {
-				GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
-				lasers.Add(bullet);
-			}
-			counter -= 1;
 		}
 		for(int count = 0; count < lasers.Count;count++ )
 		{
