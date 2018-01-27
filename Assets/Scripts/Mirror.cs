@@ -20,14 +20,13 @@ public class Mirror : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NORTH)) //if laser is travelling north
         {
             if (transform.rotation == Quaternion.Euler(0, 0, 0) || transform.rotation == Quaternion.Euler(0, 0, 360))
             {
                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, EAST);
             }
-            else if (transform.rotation == Quaternion.Euler(0, 0, 270))
+            else if (transform.rotation == Quaternion.Euler(0, 0, 270) || transform.rotation == Quaternion.Euler(0, 0, -90))
             {
                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, WEST);
             }
@@ -57,7 +56,7 @@ public class Mirror : MonoBehaviour {
             {
                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, NORTH);
             }
-            else if (transform.rotation == Quaternion.Euler(0, 0, 270))
+            else if (transform.rotation == Quaternion.Euler(0, 0, 270) || transform.rotation == Quaternion.Euler(0, 0, -90))
             {
                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, SOUTH);
             }
@@ -66,7 +65,7 @@ public class Mirror : MonoBehaviour {
                 Destroy(other.gameObject);
             }
         }
-        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, WEST)) //if laser is travelling south
+        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, SOUTH)) //if laser is travelling south
         {
             if (transform.rotation == Quaternion.Euler(0, 0, 90))
             {
@@ -81,11 +80,8 @@ public class Mirror : MonoBehaviour {
                 Destroy(other.gameObject);
             }
         }
-
-
-
-        /*
          
+        /*
         if (other.gameObject.CompareTag("LaserWhite") ||
 			other.gameObject.CompareTag("LaserRed") ||
 			other.gameObject.CompareTag("LaserGreen") ||
