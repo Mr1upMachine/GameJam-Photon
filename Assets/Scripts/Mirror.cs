@@ -50,7 +50,7 @@ public class Mirror : MonoBehaviour {
                 Destroy(other.gameObject);
             }
         }
-        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, EAST)) //if laser is travelling east
+        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, EAST) || other.gameObject.transform.rotation == Quaternion.Euler(0, 0, -90)) //if laser is travelling east
         {
             if (transform.rotation == Quaternion.Euler(0, 0, 180))
             {
