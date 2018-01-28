@@ -14,16 +14,7 @@ public class Player : MonoBehaviour {
     void Start () {
         shotSpeed = 10;
 	}
-    
-	private void FixedUpdate()
-	{
-
-		
-	}
-
-<<<<<<< HEAD
-    private void OnMouseOver()
-=======
+//=======
     private void FixedUpdate()
     {
             if (Input.GetKeyDown("space"))
@@ -40,7 +31,6 @@ public class Player : MonoBehaviour {
             }
     }
         private void OnMouseOver()
->>>>>>> 80fdd264558cf195966486ca8f2dcb80a053fdba
     {
         if (canRotate)
         {
