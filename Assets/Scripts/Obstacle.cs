@@ -6,6 +6,8 @@ public class Obstacle : MonoBehaviour {
 
     // Use this for initialization
 
+    public bool canMove = false;
+
     public Transform targetPos; //assign these in inspector with "waypoint" gameobjects or something.
     public Transform startPos;
 
@@ -16,9 +18,10 @@ public class Obstacle : MonoBehaviour {
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         transform.LookAt(targetPos.position);
         transform.position += transform.forward * speed * Time.deltaTime;
         if (towards)
