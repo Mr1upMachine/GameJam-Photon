@@ -78,7 +78,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.16333333
+  m_Radius: 0.01
 --- !u!96 &96375039224958434
 TrailRenderer:
   serializedVersion: 2
@@ -117,7 +117,7 @@ TrailRenderer:
   m_Time: 0.1
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.2
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -211,7 +211,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e2516fb14ce53454b9ea1173c506e99f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a2714f531e777746a86628c1f3c490c, type: 3}
   m_Color: {r: 0, g: 0.7647059, b: 0.22677484, a: 1}
   m_FlipX: 0
   m_FlipY: 0

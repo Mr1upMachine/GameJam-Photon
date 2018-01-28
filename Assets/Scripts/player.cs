@@ -15,11 +15,8 @@ public class Player : MonoBehaviour {
         shotSpeed = 10;
 	}
     
-
-	// Update is called once per frame
-	void Update()
+	private void FixedUpdate()
 	{
-
 		if (Input.GetKeyDown("space"))
 		{
 			GameObject bullet = (GameObject)Instantiate(laserPrefab, spawn.position, spawn.rotation);
