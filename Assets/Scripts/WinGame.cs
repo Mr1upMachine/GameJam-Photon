@@ -17,20 +17,26 @@ public class WinGame : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (gameObject.tag == "EndPointR")
+        if (gameObject.tag == "endR")
         {
             if (other.gameObject.tag == "LaserRed")
             {
                 SceneManager.LoadScene("WinScene");
             }
         }
-        else if (gameObject.tag == "EndPointG")
+        else if (gameObject.tag == "endG")
         {
-
+            if (other.gameObject.tag == "LaserGreen")
+            {
+                SceneManager.LoadScene("WinScene");
+            }
         }
-        else if (gameObject.tag == "EndPointB")
+        else if (gameObject.tag == "endB")
         {
-
+            if (other.gameObject.tag == "LaserBlue")
+            {
+                SceneManager.LoadScene("WinScene");
+            }
         }
     }
 }

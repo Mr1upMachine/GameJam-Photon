@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 114735996965055290}
   - component: {fileID: 61398550349702790}
   m_Layer: 0
-  m_Name: End Point
-  m_TagString: Untagged
+  m_Name: End PointW
+  m_TagString: endW
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
