@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 61702277560158724}
   - component: {fileID: 114431944084649098}
   m_Layer: 0
-  m_Name: ColorChangerB
+  m_Name: colorChangerB
   m_TagString: ConvertBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
