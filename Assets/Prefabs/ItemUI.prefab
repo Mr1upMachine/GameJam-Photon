@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4086789653540130}
   - component: {fileID: 212342103193687840}
+  - component: {fileID: 114202644797508060}
+  - component: {fileID: 114258964787904954}
   m_Layer: 0
   m_Name: ItemUI
   m_TagString: Untagged
@@ -40,6 +42,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114202644797508060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717958985241438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db7b04aa36a06945a1d93f756ff5f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects: []
+  objectCounts: 
+--- !u!114 &114258964787904954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717958985241438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c9cdde1194e6a4d9a8359b7582d0aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212342103193687840
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -74,7 +100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6e2378bee723adb40b5edde74bbf5530, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8efe634d46009eb46aa67b20d72b17cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
