@@ -19,7 +19,7 @@ public class ItemUI : MonoBehaviour {
 
 		for (int i = 1; i <= count; i++) {
 			if (objectCounts [i - 1] > 0) {
-				Vector3 tempVec = new Vector3 (8.5f, -i * 2.0f + 5, 0.0f);
+				Vector3 tempVec = new Vector3 (14.5f, 6 - i, 0.0f);
 				objects [i - 1] = (GameObject)Instantiate (objects [i - 1], tempVec, Quaternion.Euler (0, 0, 0));
 				startLocations.Add (tempVec);
 				objectCounts[i - 1]--;
@@ -31,7 +31,7 @@ public class ItemUI : MonoBehaviour {
 	void Update () {
 		for (int i = 1; i <= cnt; i++) {
 			if (objectCounts [i - 1] > 0) {
-				Vector3 tempVec = new Vector3 (8.5f, -i * 2.0f + 5, 0.0f);
+				Vector3 tempVec = new Vector3 (14.5f, 6 - i, 0.0f);
 				objects [i - 1] = (GameObject)Instantiate (objects [i - 1], tempVec, Quaternion.Euler (0, 0, 0));
 				startLocations.Add (tempVec);
 				objectCounts[i - 1]--;

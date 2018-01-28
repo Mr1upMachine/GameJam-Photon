@@ -29,7 +29,7 @@ public class Splitter : MonoBehaviour {
 		} else if (tag == "splitWBG") {
 			laserL = blueLaser;
 			laserR = greenLaser;
-		}else if (tag == "splitWBR") {
+		} else if (tag == "splitWBR") {
 			laserL = blueLaser;
 			laserR = redLaser;
 		} else if (tag == "splitWGG") {
@@ -38,7 +38,10 @@ public class Splitter : MonoBehaviour {
 		} else if (tag == "splitWGR") {
 			laserL = greenLaser;
 			laserR = redLaser;
-		} else if (tag == "splitwRR") {
+		} else if (tag == "splitWGB") {
+			laserL = greenLaser;
+			laserR = blueLaser;
+		} else if (tag == "splitWRR") {
 			laserL = redLaser;
 			laserR = redLaser;
 		} else if (tag == "splitWRB") {
@@ -47,6 +50,24 @@ public class Splitter : MonoBehaviour {
 		} else if (tag == "splitWRG") {
 			laserL = redLaser;
 			laserR = greenLaser;
+		} else if (tag == "splitWWR") {
+			laserL = whiteLaser;
+			laserR = redLaser;
+		} else if (tag == "splitWRW") {
+			laserL = redLaser;
+			laserR = whiteLaser;
+		} else if (tag == "splitWWB") {
+			laserL = whiteLaser;
+			laserR = blueLaser;
+		} else if (tag == "splitWBW") {
+			laserL = blueLaser;
+			laserR = whiteLaser;
+		} else if (tag == "splitWWG") {
+			laserL = whiteLaser;
+			laserR = greenLaser;
+		} else if (tag == "splitWGW") {
+			laserL = greenLaser;
+			laserR = whiteLaser;
 		}
 
         Destroy(other.gameObject);

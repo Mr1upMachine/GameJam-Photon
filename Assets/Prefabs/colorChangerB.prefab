@@ -194,9 +194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81233c59ac84a55469e0111865704d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redLaser: {fileID: 1056463680602494, guid: ac92c600849335741b3e0f247424592f, type: 2}
-  blueLaser: {fileID: 1566668011422380, guid: 2b30697e7891cd840aa320f5b7f1149e, type: 2}
-  greenLaser: {fileID: 1191478439923922, guid: a1fa52cbc641b814aaad63aa54202be6, type: 2}
+  redLaser: {fileID: 1293396727838366, guid: ac92c600849335741b3e0f247424592f, type: 2}
+  blueLaser: {fileID: 1077828085840024, guid: 2b30697e7891cd840aa320f5b7f1149e, type: 2}
+  greenLaser: {fileID: 1225286368114824, guid: a1fa52cbc641b814aaad63aa54202be6, type: 2}
   spawnN: {fileID: 4610367719483108}
   spawnS: {fileID: 4005737202928160}
   spawnE: {fileID: 4018649964147066}
