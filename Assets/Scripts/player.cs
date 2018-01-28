@@ -8,9 +8,10 @@ public class Player : MonoBehaviour {
 	private float shotSpeed;
 	public GameObject laserPrefab;
     public Transform spawn;
+    public bool canRotate = true;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         shotSpeed = 10;
 	}
     
@@ -32,4 +33,29 @@ public class Player : MonoBehaviour {
 			}
 		}
 	}
+    private void OnMouseOver()
+    {
+        if (canRotate)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                if (transform.rotation == Quaternion.Euler(0, 0, 0))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 270);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 270))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 180);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 180))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 90);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 90))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+            }
+        }
+    }
 }
