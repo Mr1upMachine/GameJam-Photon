@@ -22,7 +22,9 @@ public class ColorChange : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NORTH)) //if laser is travelling north
+        if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, NORTH) ||
+			other.gameObject.transform.rotation == Quaternion.Euler(0, 0, 0) ||
+			other.gameObject.transform.rotation == Quaternion.Euler(0, 0, -360)) //if laser is travelling north
         {
             if (gameObject.tag == "ConvertRed")
             {
@@ -43,7 +45,8 @@ public class ColorChange : MonoBehaviour
                 Player.lasers.Add(bullet);
             }
         }
-        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, WEST)) //if laser is travelling west
+        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, WEST) ||
+			other.gameObject.transform.rotation == Quaternion.Euler(0, 0, -270)) //if laser is travelling west
         {
             if (gameObject.tag == "ConvertRed")
             {
@@ -64,24 +67,25 @@ public class ColorChange : MonoBehaviour
                 Player.lasers.Add(bullet);
             }
         }
-        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, EAST)) //if laser is travelling east
+        else if (other.gameObject.transform.rotation == Quaternion.Euler(0, 0, EAST) ||
+			other.gameObject.transform.rotation == Quaternion.Euler(0, 0, -90)) //if laser is travelling east
         {
             if (gameObject.tag == "ConvertRed")
             {
                 Destroy(other.gameObject);
-                GameObject bullet = (GameObject)Instantiate(redLaser, spawnN.position, spawnE.rotation);
+                GameObject bullet = (GameObject)Instantiate(redLaser, spawnE.position, spawnE.rotation);
                 Player.lasers.Add(bullet);
             }
             if (gameObject.tag == "ConvertBlue")
             {
                 Destroy(other.gameObject);
-                GameObject bullet = (GameObject)Instantiate(blueLaser, spawnN.position, spawnE.rotation);
+                GameObject bullet = (GameObject)Instantiate(blueLaser, spawnE.position, spawnE.rotation);
                 Player.lasers.Add(bullet);
             }
             if (gameObject.tag == "ConvertGreen")
             {
                 Destroy(other.gameObject);
-                GameObject bullet = (GameObject)Instantiate(greenLaser, spawnN.position, spawnE.rotation);
+                GameObject bullet = (GameObject)Instantiate(greenLaser, spawnE.position, spawnE.rotation);
                 Player.lasers.Add(bullet);
             }
         }
