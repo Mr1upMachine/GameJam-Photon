@@ -5,45 +5,29 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour {
 
     // Use this for initialization
-
-    public Transform targetPos; //assign these in inspector with "waypoint" gameobjects or something.
-    public Transform startPos;
-
-    bool towards = true;
-    public float speed = 0.1f;
-
+    public float distance;
+    public float min = 2f;
+    public float max = 3f;
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.LookAt(targetPos.position);
-        transform.position += transform.forward * speed * Time.deltaTime;
-        if (towards)
-        {
-            if (Vector3.Distance(transform.position, targetPos.position) < 1.0f)
-            {
-                towards = false;
-            }
-        }
-        else
-        {
-            if (Vector3.Distance(transform.position, startPos.position) < 1.0f)
-            {
-                towards = true;
-            }
-        }
+    void Start()
+    {
+
+        min = transform.position.x;
+        max = transform.position.x + distance;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+        transform.position = new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z);
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(other.gameObject);
-    }
-
-    private void OnDestroy()
-    {
-        //plays particle effect animation
     }
 }
