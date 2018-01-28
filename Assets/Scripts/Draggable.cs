@@ -17,7 +17,7 @@ public class Draggable : MonoBehaviour
     {
         tilemap = GameObject.Find("Tilemap").GetComponent<Tilemap>();
         grid = GameObject.Find("Grid").GetComponent<Grid>();
-        Debug.Log("Starting World Pos: " + transform.position);
+        //Debug.Log("Starting World Pos: " + transform.position);
         if (gameObject.GetComponent(typeof(BoxCollider2D)) == null && gameObject.GetComponent(typeof(PolygonCollider2D)) == null)
         {
             //Debug.Log("Does not have a box collider, please set one");
@@ -97,17 +97,10 @@ public class Draggable : MonoBehaviour
 
         //Debug.Log("Collided: " + collided);
         Vector3Int cellPosition = grid.WorldToCell(transform.position);
-        Debug.Log(tilemap.GetInstantiatedObject(cellPosition));
+        //Debug.Log(tilemap.GetInstantiatedObject(cellPosition));
         transform.position = grid.GetCellCenterWorld(cellPosition);
 
         //Destroy(temp);
-    }
-
-    private GameObject[] findAllGameObj(GameObject[] arr)
-    {
-        
-
-        return arr;
     }
 
     //private void OnCollisionEnter2D(Collision2D collision)
