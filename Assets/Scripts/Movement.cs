@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour {
+public class Movement : MonoBehaviour {
 
     public float distance;
     public float min = 2f;
     public float max = 3f;
+    public float speed;
     // Use this for initialization
     void Start()
     {
