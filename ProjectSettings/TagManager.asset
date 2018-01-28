@@ -18,6 +18,16 @@ TagManager:
   - Wall
   - Tilemap
   - Grid
+  - splitWWW
+  - splitWBB
+  - splitWBG
+  - splitWBR
+  - splitWGG
+  - splitWGB
+  - splitWGR
+  - splitWRR
+  - splitWRB
+  - splitWRG
   layers:
   - Default
   - TransparentFX

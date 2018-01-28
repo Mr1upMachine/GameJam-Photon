@@ -17,9 +17,41 @@ public class Splitter : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D other)
     {
+		GameObject laserL = whiteLaser;
+		GameObject laserR = whiteLaser;
+
+		if (tag == "splitWWW") {
+			laserL = whiteLaser;
+			laserR = whiteLaser;
+		} else if (tag == "splitWBB") {
+			laserL = blueLaser;
+			laserR = blueLaser;
+		} else if (tag == "splitWBG") {
+			laserL = blueLaser;
+			laserR = greenLaser;
+		}else if (tag == "splitWBR") {
+			laserL = blueLaser;
+			laserR = redLaser;
+		} else if (tag == "splitWGG") {
+			laserL = greenLaser;
+			laserR = greenLaser;
+		} else if (tag == "splitWGR") {
+			laserL = greenLaser;
+			laserR = redLaser;
+		} else if (tag == "splitwRR") {
+			laserL = redLaser;
+			laserR = redLaser;
+		} else if (tag == "splitWRB") {
+			laserL = redLaser;
+			laserR = blueLaser;
+		} else if (tag == "splitWRG") {
+			laserL = redLaser;
+			laserR = greenLaser;
+		}
+
         Destroy(other.gameObject);
-        GameObject bullet1 = (GameObject)Instantiate(whiteLaser, spawnL.position, spawnL.rotation);
-        GameObject bullet2 = (GameObject)Instantiate(whiteLaser, spawnR.position, spawnR.rotation);
+		GameObject bullet1 = (GameObject)Instantiate(laserL, spawnL.position, spawnL.rotation);
+		GameObject bullet2 = (GameObject)Instantiate(laserR, spawnR.position, spawnR.rotation);
         Player.lasers.Add(bullet1);
         Player.lasers.Add(bullet2);
     }
