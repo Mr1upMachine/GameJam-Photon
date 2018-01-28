@@ -15,14 +15,15 @@ public class Player : MonoBehaviour {
         shotSpeed = 10;
 	}
     
-
-	// Update is called once per frame
-	void Update()
+	private void FixedUpdate()
 	{
 
 		
 	}
 
+<<<<<<< HEAD
+    private void OnMouseOver()
+=======
     private void FixedUpdate()
     {
             if (Input.GetKeyDown("space"))
@@ -39,6 +40,7 @@ public class Player : MonoBehaviour {
             }
     }
         private void OnMouseOver()
+>>>>>>> 80fdd264558cf195966486ca8f2dcb80a053fdba
     {
         if (canRotate)
         {
