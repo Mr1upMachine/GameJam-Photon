@@ -38,5 +38,12 @@ public class WinGame : MonoBehaviour {
                 SceneManager.LoadScene("WinScene");
             }
         }
+        else if (gameObject.tag == "EndW")
+        {
+            if (other.gameObject.tag == "LaserWhite")
+            {
+                SceneManager.LoadScene("WinScene");
+            }
+        }
     }
 }
