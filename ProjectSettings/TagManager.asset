@@ -37,6 +37,7 @@ TagManager:
   - EndR
   - EndG
   - EndB
+  - EndW
   layers:
   - Default
   - TransparentFX
