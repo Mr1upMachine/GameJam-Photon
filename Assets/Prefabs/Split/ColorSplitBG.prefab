@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 61978982299219626}
   - component: {fileID: 58560427638343430}
   m_Layer: 0
-  m_Name: ColorSplitBG (1)
+  m_Name: ColorSplitBG
   m_TagString: splitWBG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
