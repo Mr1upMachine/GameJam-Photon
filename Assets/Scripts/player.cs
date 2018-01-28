@@ -18,21 +18,29 @@ public class Player : MonoBehaviour {
 	private void FixedUpdate()
 	{
 
-		if (Input.GetKeyDown("space"))
-		{
-			GameObject bullet = (GameObject)Instantiate(laserPrefab, spawn.position, spawn.rotation);
-			lasers.Add(bullet);
-		}
-		for(int count = 0; count < lasers.Count; count++ )
-		{
-			if (lasers[count] != null)
-			{
-				lasers[count].transform.Translate(new Vector3(0, 1) * Time.deltaTime * shotSpeed);
-			}
-		}
+		
 	}
 
+<<<<<<< HEAD
     private void OnMouseOver()
+=======
+    private void FixedUpdate()
+    {
+            if (Input.GetKeyDown("space"))
+            {
+                GameObject bullet = (GameObject)Instantiate(laserPrefab, spawn.position, spawn.rotation);
+                lasers.Add(bullet);
+            }
+            for (int count = 0; count < lasers.Count; count++)
+            {
+                if (lasers[count] != null)
+                {
+                    lasers[count].transform.Translate(new Vector3(0, 1) * Time.deltaTime * shotSpeed);
+                }
+            }
+    }
+        private void OnMouseOver()
+>>>>>>> 80fdd264558cf195966486ca8f2dcb80a053fdba
     {
         if (canRotate)
         {
