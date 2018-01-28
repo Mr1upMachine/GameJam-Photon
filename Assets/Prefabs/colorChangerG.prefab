@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 61192905550195446}
   m_Layer: 0
   m_Name: ColorChangerG
-  m_TagString: Untagged
+  m_TagString: ConvertGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
