@@ -85,20 +85,32 @@ public class Splitter : MonoBehaviour {
             {
                 if (transform.rotation == Quaternion.Euler(0, 0, 0))
                 {
-                    transform.rotation = Quaternion.Euler(0, 0, 270);
+                    transform.rotation = Quaternion.Euler(0, 0, 315);
                 }
                 else if (transform.rotation == Quaternion.Euler(0, 0, 270))
                 {
-                    transform.rotation = Quaternion.Euler(0, 0, 180);
+                    transform.rotation = Quaternion.Euler(0, 0, 225);
                 }
                 else if (transform.rotation == Quaternion.Euler(0, 0, 180))
                 {
-                    transform.rotation = Quaternion.Euler(0, 0, 90);
+                    transform.rotation = Quaternion.Euler(0, 0, 135);
                 }
                 else if (transform.rotation == Quaternion.Euler(0, 0, 90))
                 {
-                    transform.rotation = Quaternion.Euler(0, 0, 0);
-                }
+                    transform.rotation = Quaternion.Euler(0, 0, 45);
+				} else if (transform.rotation == Quaternion.Euler(0, 0, 45))
+				{
+					transform.rotation = Quaternion.Euler(0, 0, 0);
+				} else if (transform.rotation == Quaternion.Euler(0, 0, 315))
+				{
+					transform.rotation = Quaternion.Euler(0, 0, 270);
+				} else if (transform.rotation == Quaternion.Euler(0, 0, 225))
+				{
+					transform.rotation = Quaternion.Euler(0, 0, 180);
+				} else if (transform.rotation == Quaternion.Euler(0, 0, 135))
+				{
+					transform.rotation = Quaternion.Euler(0, 0, 90);
+				}
             }
         }
     }

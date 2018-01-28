@@ -13,19 +13,6 @@ public class ItemUI : MonoBehaviour {
 	void Start () {
 		int count = objects.Count;
 		cnt = count;
-		float height = this.transform.localScale.y;
-		float width = this.transform.localScale.x;
-		int scale = (int)height / (count + 1);
-
-		for (int i = 1; i <= count; i++) {
-			if (objectCounts [i - 1] > 0) {
-                Debug.Log(transform.position.x);
-				Vector3 tempVec = new Vector3 (transform.position.x - .22f, 5 - i, 0.0f);
-				objects [i - 1] = (GameObject)Instantiate (objects [i - 1], tempVec, Quaternion.Euler (0, 0, 0));
-				startLocations.Add (tempVec);
-				objectCounts[i - 1]--;
-			}
-		}
 	}
 	
 	// Update is called once per frame

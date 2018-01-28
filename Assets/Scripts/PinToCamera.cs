@@ -14,7 +14,7 @@ public class PinToCamera : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         float offsetX, offsetY, offsetZ;
-        offsetX = 9.1f;
+        offsetX = 11f;
         offsetY = .5f;
         offsetZ = .2f;
         Vector3 v3 = Camera.main.transform.position;
