@@ -602,6 +602,11 @@ Tilemap:
     e32: 0
     e33: 1
   m_TileRefreshArray: []
+--- !u!4 &388946246 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4412056044999752, guid: efffea34d7f32e7498d325ebc599de67,
+    type: 2}
+  m_PrefabInternal: {fileID: 1540661819}
 --- !u!4 &404312080 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4319405568130344, guid: ae6fd3bed32c35f44872e114d02c77ff,
@@ -778,6 +783,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4319405568130344, guid: ae6fd3bed32c35f44872e114d02c77ff,
     type: 2}
   m_PrefabInternal: {fileID: 1610971147}
+--- !u!1 &452541499 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1279441037639506, guid: efffea34d7f32e7498d325ebc599de67,
+    type: 2}
+  m_PrefabInternal: {fileID: 1540661819}
+--- !u!114 &452541500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 452541499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46065f892a693274b82722fe0c9e8223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 1883344373255996, guid: 7fe221e93ff54fb4e90119f2b1d75ad6,
+    type: 2}
+  spawn: {fileID: 388946246}
+  canRotate: 1
 --- !u!4 &467991985 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4319405568130344, guid: ae6fd3bed32c35f44872e114d02c77ff,
@@ -3569,7 +3594,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4081954198620784, guid: efffea34d7f32e7498d325ebc599de67, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.88
+      value: 10.26
       objectReference: {fileID: 0}
     - target: {fileID: 4081954198620784, guid: efffea34d7f32e7498d325ebc599de67, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3599,7 +3624,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114671996321899044, guid: efffea34d7f32e7498d325ebc599de67, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: efffea34d7f32e7498d325ebc599de67, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1549848952 stripped
