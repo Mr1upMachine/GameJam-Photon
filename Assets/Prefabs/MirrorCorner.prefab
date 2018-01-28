@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61076714302970568}
   - component: {fileID: 114046194024873126}
   m_Layer: 0
-  m_Name: mirrorBase 1
+  m_Name: MirrorCorner
   m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad0198096eff894ea7eeb77609d0f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canRotate: 1
 --- !u!212 &212442284028806526
 SpriteRenderer:
   m_ObjectHideFlags: 1
