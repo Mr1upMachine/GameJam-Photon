@@ -19,10 +19,10 @@ public class Obstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        transform.LookAt(targetPos.position);
+        transform.position += transform.forward * speed * Time.deltaTime;
         if (towards)
         {
-            transform.LookAt(targetPos.position);
-            transform.position += transform.forward * speed * Time.deltaTime;
             if (Vector3.Distance(transform.position, targetPos.position) < 1.0f)
             {
                 towards = false;
@@ -30,13 +30,9 @@ public class Obstacle : MonoBehaviour {
         }
         else
         {
-            transform.LookAt(startPos.position);
-            transform.position += transform.forward * speed * Time.deltaTime;
             if (Vector3.Distance(transform.position, startPos.position) < 1.0f)
             {
-                {
-                    towards = true;
-                }
+                towards = true;
             }
         }
     }
