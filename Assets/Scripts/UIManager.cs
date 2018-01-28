@@ -53,7 +53,8 @@ namespace AssemblyCSharp
 		}
 		public void showPaused()
 		{
-			foreach (GameObject g in pauseObjects) {
+			foreach (GameObject g in pauseObjects)
+            {
 				g.SetActive (true);
 			}
 		}
