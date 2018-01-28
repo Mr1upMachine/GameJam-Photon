@@ -5,6 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour {
 
     // Use this for initialization
+    public bool doesMove = false;
 
     public Transform targetPos; //assign these in inspector with "waypoint" gameobjects or something.
     public Transform startPos;
@@ -19,20 +20,23 @@ public class Obstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.LookAt(targetPos.position);
-        transform.position += transform.forward * speed * Time.deltaTime;
-        if (towards)
+        if (doesMove)
         {
-            if (Vector3.Distance(transform.position, targetPos.position) < 1.0f)
+            transform.LookAt(targetPos.position);
+            transform.position += transform.forward * speed * Time.deltaTime;
+            if (towards)
             {
-                towards = false;
+                if (Vector3.Distance(transform.position, targetPos.position) < 1.0f)
+                {
+                    towards = false;
+                }
             }
-        }
-        else
-        {
-            if (Vector3.Distance(transform.position, startPos.position) < 1.0f)
+            else
             {
-                towards = true;
+                if (Vector3.Distance(transform.position, startPos.position) < 1.0f)
+                {
+                    towards = true;
+                }
             }
         }
     }
