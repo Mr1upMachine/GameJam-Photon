@@ -34,6 +34,9 @@ TagManager:
   - splitWWR
   - splitWGW
   - splitWWG
+  - EndR
+  - EndG
+  - EndB
   layers:
   - Default
   - TransparentFX
