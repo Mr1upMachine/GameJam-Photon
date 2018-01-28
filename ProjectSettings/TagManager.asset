@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mirror
+  - LaserWhite
+  - LaserRed
+  - LaserGreen
+  - LaserBlue
+  - ConvertRed
+  - ConvertBlue
+  - ConvertGreen
+  - MirrorRed
+  - MirrorBlue
+  - MirrorGreen
+  - Wall
+  - Tilemap
+  - Grid
   layers:
   - Default
   - TransparentFX
@@ -38,6 +52,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 576551339
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1761963283
     locked: 0

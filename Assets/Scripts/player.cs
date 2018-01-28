@@ -2,26 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour {
+public class Player : MonoBehaviour {
 
-	private List<GameObject> lasers = new List<GameObject>();
+	public static List<GameObject> lasers = new List<GameObject>();
 	private float shotSpeed;
 	public GameObject laserPrefab;
-	// Use this for initialization
-	void Start () {
-        shotSpeed = 5;
+    public Transform spawn;
+    public bool canRotate = true;
+
+    // Use this for initialization
+    void Start () {
+        shotSpeed = 10;
 	}
     
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKeyDown("mouse 0"))
+
+		if (Input.GetKeyDown("space"))
 		{
-			GameObject bullet = (GameObject)Instantiate(laserPrefab, transform.position, Quaternion.identity);
+			GameObject bullet = (GameObject)Instantiate(laserPrefab, spawn.position, spawn.rotation);
 			lasers.Add(bullet);
 		}
-		for(int count = 0; count < lasers.Count;count++ )
+		for(int count = 0; count < lasers.Count; count++ )
 		{
 			if (lasers[count] != null)
 			{
@@ -29,4 +33,29 @@ public class player : MonoBehaviour {
 			}
 		}
 	}
+    private void OnMouseOver()
+    {
+        if (canRotate)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                if (transform.rotation == Quaternion.Euler(0, 0, 0))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 270);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 270))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 180);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 180))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 90);
+                }
+                else if (transform.rotation == Quaternion.Euler(0, 0, 90))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+            }
+        }
+    }
 }
