@@ -1758,6 +1758,7 @@ GameObject:
   - component: {fileID: 611487231}
   - component: {fileID: 611487230}
   - component: {fileID: 611487229}
+  - component: {fileID: 611487233}
   m_Layer: 5
   m_Name: Canvas_StartMenu
   m_TagString: Untagged
@@ -1845,6 +1846,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &611487233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 611487228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d20d6767769850547a53cf91e0476304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &646702988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,7 +2538,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2017708537}
+      objectReference: {fileID: 611487233}
     - target: {fileID: 114857915870254300, guid: 80f38d1ebea712e4fa85a93448583195,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2576,6 +2588,11 @@ Prefab:
     - target: {fileID: 1721220247724960, guid: 80f38d1ebea712e4fa85a93448583195, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114857915870254300, guid: 80f38d1ebea712e4fa85a93448583195,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80f38d1ebea712e4fa85a93448583195, type: 2}
@@ -2956,7 +2973,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Title
+  m_Text: Photon
 --- !u!222 &1125433724
 CanvasRenderer:
   m_ObjectHideFlags: 0
