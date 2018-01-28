@@ -7,17 +7,6 @@ public class ColorChange : MonoBehaviour
     const int NORTH = 0, WEST = 90, SOUTH = 180, EAST = 270; //Use with laser direction
     public GameObject redLaser, blueLaser, greenLaser;
     public Transform spawnN, spawnS, spawnE, spawnW;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
