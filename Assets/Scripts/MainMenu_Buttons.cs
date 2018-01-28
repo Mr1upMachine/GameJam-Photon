@@ -8,13 +8,11 @@ public class MainMenu_Buttons : MonoBehaviour {
     public GameObject ClassicLvlPanel;
     public GameObject PuzzleLvlPanel;
     public GameObject InstructionsPanel;
-    public GameObject GameJamLogo;
 
 	// Only main panel and logo appear upon startup. Button submenues appear when they are clicked.
 	void Start ()
     {
         MainPanel.SetActive(true); 
-        GameJamLogo.SetActive(true);
         ClassicLvlPanel.SetActive(false);
         PuzzleLvlPanel.SetActive(false);
         InstructionsPanel.SetActive(false);
@@ -29,7 +27,6 @@ public class MainMenu_Buttons : MonoBehaviour {
     public void ShowClassicLvlPanel()
     {
         MainPanel.SetActive(true);
-        GameJamLogo.SetActive(false);
         ClassicLvlPanel.SetActive(true);
         PuzzleLvlPanel.SetActive(false);
         InstructionsPanel.SetActive(false);
@@ -40,7 +37,6 @@ public class MainMenu_Buttons : MonoBehaviour {
     {
         MainPanel.SetActive(true);
         PuzzleLvlPanel.SetActive(true);
-        GameJamLogo.SetActive(false);
         InstructionsPanel.SetActive(false);
         ClassicLvlPanel.SetActive(false);
     }
@@ -50,7 +46,6 @@ public class MainMenu_Buttons : MonoBehaviour {
     {
         MainPanel.SetActive(true);
         InstructionsPanel.SetActive(true);
-        GameJamLogo.SetActive(false);
         ClassicLvlPanel.SetActive(false);
         PuzzleLvlPanel.SetActive(false);
     }
