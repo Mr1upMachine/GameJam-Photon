@@ -28,6 +28,12 @@ TagManager:
   - splitWRR
   - splitWRB
   - splitWRG
+  - splitWBW
+  - splitWWB
+  - splitWRW
+  - splitWWR
+  - splitWGW
+  - splitWWG
   layers:
   - Default
   - TransparentFX
